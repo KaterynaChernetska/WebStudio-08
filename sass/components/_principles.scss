@@ -1,0 +1,43 @@
+.work {
+  padding-top: 0;
+}
+
+.principles__list {
+    display: flex;
+    gap: 30px;
+    & .principles__item {
+      width: calc((100% - 60px) / 4);
+    }
+
+    & p {
+      display: flex;
+      width: 270px;
+      line-height: 1.71;
+      margin: 0;
+    }
+  }
+ 
+  .principles__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-grey-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+  }
+  
+  .principles__title{
+    color: var(--title-text-color);
+  
+    font-weight: 700;
+    font-size: inherit;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  

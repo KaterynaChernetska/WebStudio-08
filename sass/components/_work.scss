@@ -1,0 +1,30 @@
+.work__list {
+    display: flex;
+    padding-top: 0;
+    gap: 30px;
+  }
+  .work__img {
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+  }
+  .work__title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    font-size: inherit;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding-top: 27px;
+    /* padding-bottom: 27px; */
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    );
+  }
