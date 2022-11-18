@@ -2,7 +2,7 @@
 
 @import "./utils/variables";
 @import "./utils/visually-hidden";
-
+@import "./utils/mixins";
 
 
 // ------base
@@ -26,6 +26,7 @@
 @import "./components/projects";
 @import "./components/backdrop";
 @import "./components/modal";
+@import "./components/mobile-menu";
 
 
 
