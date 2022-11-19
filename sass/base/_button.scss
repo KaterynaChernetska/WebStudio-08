@@ -1,5 +1,6 @@
 button {
     font-family: inherit;
+
   }
 .button {
     background-color: var(--background-grey-color);
@@ -63,13 +64,20 @@ button {
    
   .buttons {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    column-gap:  8px;
+    row-gap: 15px;
 
-     .item + .item {
-      margin-left: 8px;
+    @include tablet {
+      justify-content: center;
+       align-items: center;
+       margin-bottom: 30px;
     }
     
-  }
-
+    @include desktop {
+      margin-bottom: 50px;
+    }
+}

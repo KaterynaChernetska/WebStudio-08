@@ -2,13 +2,27 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    
 
     &__grid {
-      display: flex;
-      width: calc((100% - 60px) / 3);
-   
+     
     }
-  
+  .card__link {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 60px) / 3);
+    height: 100%;
+    max-width:  450px;
+    width: 100%;
+    
+    @include tablet {
+      max-width:  354px;
+    }
+
+    @include desktop {
+      max-width:  370px;
+    }
+  }
     &__title {
       color: var(--title-text-color);
     
@@ -29,7 +43,11 @@
     }
     
   &__content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
     padding: 20px 24px;
+
   
     border: 1px solid #eeeeee;
     border-top: none;
