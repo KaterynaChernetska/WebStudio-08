@@ -22,10 +22,6 @@
   transform: translateX(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-
 
   @include tablet {
     display: none;
@@ -35,10 +31,9 @@
   }
 }
 .is-open {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-  }
+  transform: translateX(0);
+  opacity: 1;
+}
 .mob-menu-close {
   background-color: var(--primary-white-color);
   border: none;
@@ -81,7 +76,6 @@
 
   color: var(--title-text-color);
 
- 
   &:active {
     color: var(--accent-color);
   }
@@ -100,6 +94,8 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
   margin-bottom: 32px;
+}
+.mail-link {
   text-decoration: none;
   font-weight: 500;
   font-size: 24px;
@@ -107,7 +103,6 @@
   letter-spacing: 0.02em;
   color: #757575;
 }
-
 
 .mob-menu-social {
   display: flex;
@@ -129,4 +124,3 @@
   border-left: none;
   padding-right: 10px;
 }
-
